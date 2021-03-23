@@ -50,7 +50,7 @@ void setup() {
   }
   else if (error == 1)
     Serial.println("No controller found, check wiring, see readme.txt to enable debug. visit www.billporter.info for troubleshooting tips");
-  else if (error == 2)
+  else if (error == 2)+-
     Serial.println("Controller found but not accepting commands. see readme.txt to enable debug. Visit www.billporter.info for troubleshooting tips");
   else if (error == 3)
     Serial.println("Controller refusing to enter Pressures mode, may not support it. ");

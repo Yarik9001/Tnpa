@@ -7,8 +7,8 @@
 #define ServoPinMan 46
 #define time_sleep 100
 
-Servo cameraServo(180);
-Servo manipulatorServo(180);
+Servo cameraServo;
+Servo manipulatorServo;
 
 
 void setup(){
@@ -17,11 +17,11 @@ void setup(){
     Serial.println("init servo");
     cameraServo.attach(ServoPinCam);
     manipulatorServo.attach(ServoPinMan);
-    Serial.println("servo init done")
+    Serial.println("servo init done");
 
     cameraServo.write(0);
     manipulatorServo.write(0);
-    delay(500)
+    delay(500);
 }
 
 void loop(){
@@ -47,5 +47,3 @@ void loop(){
 
     delay(2000);
 }
-
-
